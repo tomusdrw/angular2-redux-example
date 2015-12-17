@@ -23,14 +23,21 @@
     "webpack": "webpack --colors --progress --config ./webpack/config"
   },
   "dependencies": {
+    "angular2": "^2.0.0-beta.0",
     "brace": "^0.7.0",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.13",
     "immutable": "^3.7.5",
     "isomorphic-fetch": "^2.2.0",
     "lodash": "^3.10.1",
+    "ng2-redux": "^2.0.2",
     "normalize.css": "^3.0.3",
-    "redux": "^3.0.4",
+    "redux": "^3.0.5",
     "redux-actions": "^0.8.0",
-    "redux-thunk": "^1.0.0"
+    "redux-thunk": "^1.0.0",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.0",
+    "zone.js": "^0.5.10"
   },
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
@@ -57,8 +64,7 @@
     "karma-source-map-support": "^1.0.0",
     "karma-sourcemap-loader": "^0.3.5",
     "karma-webpack": "^1.5.1",
-    "lodash": "^3.10.0",
-    emocha": "^2.2.5",
+    "mocha": "^2.2.5",
     "mocha-loader": "^0.7.1",
     "node-libs-browser": "^0.5.2",
     "node-sass": "^3.2.0",
@@ -71,6 +77,8 @@
     "source-map-support": "^0.3.2",
     "style-loader": "^0.12.3",
     "template-html-loader": "0.0.3",
+    "ts-loader": "^0.7.2",
+    "typescript": "^1.7.5",
     "webpack": "^1.10.1",
     "webpack-dev-server": "^1.10.1"
   },

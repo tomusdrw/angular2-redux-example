@@ -5,6 +5,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var DEBUG = process.env.NODE_ENV === 'development';
 var TEST = process.env.NODE_ENV === 'test';
 
+var tsLoader = ['ts-loader'];
 var jsxLoader;
 var sassLoader;
 var cssLoader;
@@ -29,9 +30,6 @@ var sassParams = [
 
 if (DEBUG || TEST) {
   jsxLoader = [];
-  if (!TEST) {
-    jsxLoader.push('react-hot');
-  }
   jsxLoader.push('babel-loader?optional[]=runtime&stage=0&plugins=rewire');
   sassParams.push('sourceMap', 'sourceMapContents=true');
   sassLoader = [
@@ -60,9 +58,14 @@ if (DEBUG || TEST) {
 
 var loaders = [
   {
-    test: /\.jsx?$/,
+    test: /\.js?$/,
     exclude: /node_modules/,
     loaders: jsxLoader
+  },
+  {
+    test: /\.ts?$/,
+    exclude: /node_modules/,
+    loaders: tsLoader
   },
   {
     test: /\.css$/,
