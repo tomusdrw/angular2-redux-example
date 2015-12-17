@@ -23,7 +23,6 @@ if (DEBUG) {
       pkg.config.devPort
     )
   );
-  entry.app.push('webpack/hot/dev-server');
 }
 
 var config = {
@@ -54,7 +53,6 @@ var config = {
   },
   devServer: {
     contentBase: path.resolve(pkg.config.buildDir),
-    hot: true,
     noInfo: false,
     inline: true,
     stats: { colors: true }
