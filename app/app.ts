@@ -1,3 +1,5 @@
+/// <reference path="custom.d.ts" />
+
 import 'reflect-metadata';
 
 import {Component} from 'angular2/core';
@@ -7,7 +9,7 @@ import {createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
 import {provider} from 'ng2-redux';
 
-import rootReducer from './reducers/index';
+import {rootReducer} from './reducers/index';
 
 import './index.html';
 
