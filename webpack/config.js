@@ -45,9 +45,12 @@ var config = {
   postcss: [
     autoprefixer
   ],
+  ts: {
+    configFileName: '../tsconfig.json'
+  },
   plugins: plugins,
   resolve: {
-    extensions: ['', '.js', '.json', '.jsx']
+    extensions: ['', '.js', '.json', '.ts']
   },
   devServer: {
     contentBase: path.resolve(pkg.config.buildDir),

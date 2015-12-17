@@ -9,6 +9,7 @@
     "devPort": 3020
   },
   "scripts": {
+    "typings": "typings",
     "build": "NODE_ENV=production npm run webpack",
     "clean": "rimraf $npm_package_config_buildDir && mkdir $npm_package_config_buildDir",
     "env": "env",
@@ -20,7 +21,8 @@
     "start": "NODE_ENV=development node dev-server ./webpack/config",
     "test": "NODE_ENV=test karma start",
     "test-ci": "NODE_ENV=test karma start --single-run",
-    "webpack": "webpack --colors --progress --config ./webpack/config"
+    "webpack": "webpack --colors --progress --config ./webpack/config",
+    "postinstall": "typings install"
   },
   "dependencies": {
     "angular2": "^2.0.0-beta.0",
@@ -34,7 +36,7 @@
     "normalize.css": "^3.0.3",
     "redux": "^3.0.5",
     "redux-actions": "^0.8.0",
-    "redux-thunk": "^1.0.0",
+    "redux-thunk": "^1.0.2",
     "reflect-metadata": "^0.1.2",
     "rxjs": "^5.0.0-beta.0",
     "zone.js": "^0.5.10"
@@ -79,6 +81,7 @@
     "template-html-loader": "0.0.3",
     "ts-loader": "^0.7.2",
     "typescript": "^1.7.5",
+    "typings": "^0.3.4",
     "webpack": "^1.10.1",
     "webpack-dev-server": "^1.10.1"
   },
