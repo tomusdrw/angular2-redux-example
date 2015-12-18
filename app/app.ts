@@ -2,7 +2,7 @@
 
 import 'reflect-metadata';
 
-import {bootstrap} from 'angular2/bootstrap';
+import {bootstrap} from 'angular2/platform/browser';
 
 import {createStore, applyMiddleware} from 'redux';
 let thunk = require('redux-thunk');
