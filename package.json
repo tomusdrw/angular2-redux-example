@@ -83,7 +83,7 @@
     "typescript": "^1.7.5",
     "typings": "^0.3.4",
     "webpack": "^1.10.1",
-    "webpack-dev-server": "^1.10.1"
+    "webpack-dev-server": "^3.1.11"
   },
   "engines": {
     "node": ">=0.12.0"
